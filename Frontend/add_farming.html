@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Farming Type</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Farm Management System</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/farmerdetails">Farmer Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agroproducts">Agro Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <h3 class="text-center text-success">Add Farming Type</h3>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form action="/addfarming" method="post">
+          <div class="form-group">
+            <label for="farmingtype">Enter Farming Type</label>
+            <input type="text" class="form-control" name="farming" id="farmingtype" required>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Add Farming</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2024 Farm Management System
+  </footer>
+</body>
+</html>
